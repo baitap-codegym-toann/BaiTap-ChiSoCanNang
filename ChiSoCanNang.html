@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IBM</title>
+</head>
+<body>
+<script>
+    let input = prompt("enter your weight(kg) and height(m) by w,h","");
+    input = input.split(",");
+    let bmi = Number(input[0])/Math.pow(Number(input[1]),2);
+    if (bmi < 18)
+        alert("%-20.2f%s " + bmi + " Underweight");
+    else if (bmi < 25.0)
+        alert("%-20.2f%s " + bmi + " Normal");
+    else if (bmi < 30.0)
+        alert("%-20.2f%s " + bmi + " Overweight");
+    else
+        alert("%-20.2f%s " + bmi + " Obese");
+</script>
+</body>
+</html>
